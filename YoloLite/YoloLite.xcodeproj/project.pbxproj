@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09C97AC9DDF5277F8EBEB5A9 /* Pods_YoloLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E748CA8C69BE2411E299820 /* Pods_YoloLite.framework */; };
+		210ECC3328ABA83B007CB402 /* ObjectDetectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210ECC3228ABA83B007CB402 /* ObjectDetectionHelper.swift */; };
+		210ECC3628ABB116007CB402 /* yolo.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 210ECC3428ABB07A007CB402 /* yolo.tflite */; };
+		219B30CD28ABE05200B7D52D /* TFLiteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B30CC28ABE05200B7D52D /* TFLiteExtension.swift */; };
+		219D037228A96664003EAB6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219D037128A96664003EAB6C /* ContentView.swift */; };
+		219D037428A96667003EAB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219D037328A96667003EAB6C /* Assets.xcassets */; };
+		219D037728A96667003EAB6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219D037628A96667003EAB6C /* Preview Assets.xcassets */; };
+		219D037F28A96A8F003EAB6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219D037E28A96A8F003EAB6C /* SceneDelegate.swift */; };
+		219D038128A972CA003EAB6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219D038028A972CA003EAB6C /* AppDelegate.swift */; };
+		21A1B6F628AAC6B000CA57E4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1B6F528AAC6AF00CA57E4 /* ImagePicker.swift */; };
+		21D70B4F28AE81BE00BD582A /* horses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21D70B4E28AE81BE00BD582A /* horses.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		210ECC3228ABA83B007CB402 /* ObjectDetectionHelper.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ObjectDetectionHelper.swift; sourceTree = "<group>"; tabWidth = 2; };
+		210ECC3428ABB07A007CB402 /* yolo.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolo.tflite; sourceTree = "<group>"; };
+		219B30CC28ABE05200B7D52D /* TFLiteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLiteExtension.swift; sourceTree = "<group>"; };
+		219D036C28A96664003EAB6C /* YoloLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoloLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		219D037128A96664003EAB6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		219D037328A96667003EAB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		219D037628A96667003EAB6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		219D037D28A969A2003EAB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		219D037E28A96A8F003EAB6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		219D038028A972CA003EAB6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21A1B6F528AAC6AF00CA57E4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		21D70B4E28AE81BE00BD582A /* horses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horses.jpg; sourceTree = "<group>"; };
+		26B659894658743AA57B677E /* Pods-YoloLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoloLite.release.xcconfig"; path = "Target Support Files/Pods-YoloLite/Pods-YoloLite.release.xcconfig"; sourceTree = "<group>"; };
+		5E748CA8C69BE2411E299820 /* Pods_YoloLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoloLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B547301D7EA072EA40DFB14C /* Pods-YoloLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoloLite.debug.xcconfig"; path = "Target Support Files/Pods-YoloLite/Pods-YoloLite.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		219D036928A96664003EAB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C97AC9DDF5277F8EBEB5A9 /* Pods_YoloLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		219D036328A96664003EAB6C = {
+			isa = PBXGroup;
+			children = (
+				219D036E28A96664003EAB6C /* YoloLite */,
+				219D036D28A96664003EAB6C /* Products */,
+				981604A3D1B68E2B1D527800 /* Pods */,
+				B427713E904A56805362F9CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		219D036D28A96664003EAB6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				219D036C28A96664003EAB6C /* YoloLite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		219D036E28A96664003EAB6C /* YoloLite */ = {
+			isa = PBXGroup;
+			children = (
+				21D70B4E28AE81BE00BD582A /* horses.jpg */,
+				210ECC3428ABB07A007CB402 /* yolo.tflite */,
+				21A1B6F528AAC6AF00CA57E4 /* ImagePicker.swift */,
+				219D037D28A969A2003EAB6C /* Info.plist */,
+				219D037128A96664003EAB6C /* ContentView.swift */,
+				219D037328A96667003EAB6C /* Assets.xcassets */,
+				219D037528A96667003EAB6C /* Preview Content */,
+				219D037E28A96A8F003EAB6C /* SceneDelegate.swift */,
+				219D038028A972CA003EAB6C /* AppDelegate.swift */,
+				210ECC3228ABA83B007CB402 /* ObjectDetectionHelper.swift */,
+				219B30CC28ABE05200B7D52D /* TFLiteExtension.swift */,
+			);
+			path = YoloLite;
+			sourceTree = "<group>";
+		};
+		219D037528A96667003EAB6C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				219D037628A96667003EAB6C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		981604A3D1B68E2B1D527800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B547301D7EA072EA40DFB14C /* Pods-YoloLite.debug.xcconfig */,
+				26B659894658743AA57B677E /* Pods-YoloLite.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B427713E904A56805362F9CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E748CA8C69BE2411E299820 /* Pods_YoloLite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		219D036B28A96664003EAB6C /* YoloLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 219D037A28A96667003EAB6C /* Build configuration list for PBXNativeTarget "YoloLite" */;
+			buildPhases = (
+				91596E2BB6FA586A5E0BB31F /* [CP] Check Pods Manifest.lock */,
+				219D036828A96664003EAB6C /* Sources */,
+				219D036928A96664003EAB6C /* Frameworks */,
+				219D036A28A96664003EAB6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoloLite;
+			productName = YoloLite;
+			productReference = 219D036C28A96664003EAB6C /* YoloLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		219D036428A96664003EAB6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					219D036B28A96664003EAB6C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 219D036728A96664003EAB6C /* Build configuration list for PBXProject "YoloLite" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 219D036328A96664003EAB6C;
+			productRefGroup = 219D036D28A96664003EAB6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				219D036B28A96664003EAB6C /* YoloLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		219D036A28A96664003EAB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D70B4F28AE81BE00BD582A /* horses.jpg in Resources */,
+				210ECC3628ABB116007CB402 /* yolo.tflite in Resources */,
+				219D037728A96667003EAB6C /* Preview Assets.xcassets in Resources */,
+				219D037428A96667003EAB6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91596E2BB6FA586A5E0BB31F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoloLite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		219D036828A96664003EAB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219B30CD28ABE05200B7D52D /* TFLiteExtension.swift in Sources */,
+				219D038128A972CA003EAB6C /* AppDelegate.swift in Sources */,
+				210ECC3328ABA83B007CB402 /* ObjectDetectionHelper.swift in Sources */,
+				21A1B6F628AAC6B000CA57E4 /* ImagePicker.swift in Sources */,
+				219D037228A96664003EAB6C /* ContentView.swift in Sources */,
+				219D037F28A96A8F003EAB6C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		219D037828A96667003EAB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		219D037928A96667003EAB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		219D037B28A96667003EAB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B547301D7EA072EA40DFB14C /* Pods-YoloLite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YoloLite/Preview Content\"";
+				DEVELOPMENT_TEAM = A7VN3ZF86S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoloLite/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.upc.YoloLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		219D037C28A96667003EAB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B659894658743AA57B677E /* Pods-YoloLite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YoloLite/Preview Content\"";
+				DEVELOPMENT_TEAM = A7VN3ZF86S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoloLite/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.upc.YoloLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		219D036728A96664003EAB6C /* Build configuration list for PBXProject "YoloLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219D037828A96667003EAB6C /* Debug */,
+				219D037928A96667003EAB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		219D037A28A96667003EAB6C /* Build configuration list for PBXNativeTarget "YoloLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219D037B28A96667003EAB6C /* Debug */,
+				219D037C28A96667003EAB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 219D036428A96664003EAB6C /* Project object */;
+}
